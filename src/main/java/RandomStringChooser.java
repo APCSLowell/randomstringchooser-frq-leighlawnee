@@ -3,7 +3,7 @@ public class RandomStringChooser
 {
 private ArrayList ogString;
 
-RandomStringChooser(String[] str){
+public RandomStringChooser(String[] str){
 ogString =  = new Array<String>();
   for(String i : str){
     ogString.add( i);
