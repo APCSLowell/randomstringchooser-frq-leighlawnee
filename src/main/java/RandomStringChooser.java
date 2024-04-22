@@ -1,7 +1,7 @@
 import java.util.*;
 public class RandomStringChooser
 {
-private ArrayList ogString;
+private ArrayList <String> ogString;
 
 public RandomStringChooser(String[] str){
 ogString = new ArrayList<String>();
@@ -11,12 +11,12 @@ ogString = new ArrayList<String>();
 }
 
 public String getNext(){
-String temp = “”;
+
   if(ogString.size() == 0)
     return "NONE";
   else{
     int j = (int)(Math.random()*ogString.size());
-    temp = ogString.get(j);
+    String temp = ogString.get(j);
     ogString.remove(j);
     return temp;
 }
